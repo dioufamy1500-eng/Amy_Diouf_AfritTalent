@@ -2,20 +2,382 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent freelances</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>freelance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">AfriTalent</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="freelances.html">Freelance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="tarifs.html">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="about.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex aline-items-center gap-3">
+            <a class="btn-primary" href="">Rejoindre AfriTalent</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section>
+      <div class="container">
+    <h1>Catalogue de freelances</h1>
+    <p class="section-desc">
+      Découvrez <strong id="freelance-count">9 freelances</strong> experts, vérifiés et disponibles pour votre projet.
+    </p>
+    </div>
+    </section>
+
+   <section class="section-pad" style="padding-top:2rem;" aria-label="Filtrage et catalogue des freelances">
+  <div class="container">
+
+    <!-- Barre de filtres -->
+    <div class="filter-bar" role="group" aria-label="Filtrer par catégorie">
+      <button class="filter-btn active" >Tous</button>
+      <button class="filter-btn" data-filter="dev" >Développement Web</button>
+      <button class="filter-btn" data-filter="design" >Design UI/UX</button>
+      <button class="filter-btn" data-filter="data" >Data & IA</button>
+      <button class="filter-btn" data-filter="marketing" >Marketing Digital</button>
+      <button class="filter-btn" data-filter="devops" >DevOps & Cloud</button>
+      <button class="filter-btn" data-filter="redaction" >Rédaction Tech</button>
+    </div>
+
+ <div class="row g-4 mt-3" id="freelancesGrid">
+
+      <!-- Freelance 1 -->
+      <div class=" col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+             <img src="images/img.png" alt="">
+            </div>
+            <div class="freelance-name">Amy Diouf</div>
+            <div class="freelance-specialty">Développement Web</div>
+            <p class="freelance-bio">Developpeur HTML/CSS avec 1 ans d'expérience sur des projets e-commerce et SaaS en Afrique de l'Ouest.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JAVASCRIPT</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">25 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Amy Diouf">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+    
+<div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/img.png" alt="">
+            </div>
+            <div class="freelance-name">Khady Sokhna</div>
+            <div class="freelance-specialty">Développement Web</div>
+            <p class="freelance-bio">Full-stack React/Node.js avec 5 ans d'expérience sur des projets e-commerce et SaaS en Afrique de l'Ouest.</p>
+            <div class="skill-tags"></p>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">35 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Amy Diouf">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/img.png" alt="">
+            </div>
+            <div class="freelance-name">Fatou Thiam</div>
+            <div class="freelance-specialty">Data & IA</div>
+            <p class="freelance-bio">Data scientist spécialisé en ML pour la finance et l'agriculture. PhD en IA de l'Université Mohammed V de Rabat</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">35 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Fatou Thiam">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/hom.png" alt="">
+            </div>
+            <div class="freelance-name">Latyr Faye</div>
+            <div class="freelance-specialty">DevOps & Cloud</div>
+            <p class="freelance-bio">Ingénieur DevOps certifié AWS et Kubernetes. Spécialisé en CI/CD, infrastructure as code et sécurité cloud.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Terraform</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">30 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Latyr Faye">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3 ">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+               <img src="images/hom.png" alt="">
+            </div>
+            <div class="freelance-name">Oumy Diouf</div>
+            <div class="freelance-specialty">Design UI/UX</div>
+            <p class="freelance-bio">Designer produit passionnée par l'expérience mobile en Afrique. Portfolio primé au Pan-African Design Award 2025.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Prototypage</span>
+              <span class="skill-tag">Research</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">20 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Oumy Diouf">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/hom.png" alt="">
+            </div>
+            <div class="freelance-name">Cheikh Diallo</div>
+            <div class="freelance-specialty">Marketing Digital</div>
+            <p class="freelance-bio">Expert en growth hacking et SEO pour startups africaines. A contribué à faire croître 3 licornes tech nigérianes.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">SEO</span>
+              <span class="skill-tag">Growth</span>
+              <span class="skill-tag">Analytics</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">18 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Cheikh Diallo">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/hom.png" alt="">
+            </div>
+            <div class="freelance-name">Moustapha Bop</div>
+            <div class="freelance-specialty">Rédaction Tech</div>
+            <p class="freelance-bio">Rédacteur technique trilingue (FR/AR/EN). Spécialisée en documentation API, whitepapers et articles de blog tech.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Documentation</span>
+              <span class="skill-tag">API Docs</span>
+              <span class="skill-tag">Blog</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">15 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Moustapha Bop">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/img.png" alt="">
+            </div>
+            <div class="freelance-name">Assaitou Ndiaye</div>
+            <div class="freelance-specialty">Data & IA</div>
+            <p class="freelance-bio">Ingénieur data spécialisé en pipeline ETL et visualisation. Expert Power BI et Tableau pour des dashboards décisionnels.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Spark</span>
+              <span class="skill-tag">dbt</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">28 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Aissatou Ndiaye">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+        <article class="freelance-card bg-light rounded-3">
+          <div class="freelance-card-body">
+            <div class="freelance-avatar" aria-hidden="true">
+              <img src="images/img.png" alt="">
+            </div>
+            <div class="freelance-name">Adja Sow</div>
+            <div class="freelance-specialty">Design UI/UX</div>
+            <p class="freelance-bio">Directrice artistique freelance. Créatrice d'identités de marque pour startups fintech et edtech panafricaines.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Branding</span>
+              <span class="skill-tag">Illustrator</span>
+              <span class="skill-tag">After Effects</span>
+            </div>
+            <div class="freelance-meta">
+              <div class="freelance-rate">24 000 F</div>
+              <div>
+              </div>
+            </div>
+            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
+               aria-label="Adja Sow">
+              Voir le profil
+            </a>
+          </div>
+        </article>
+      </div>
+   
+
+    </div>
+    </div>
+</section>
 
 
+  </main>
 
+ <footer>
+  <div class="container">
+    <div class="row g-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+      <!-- Colonne 1 : Marque -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand">AfriTalent<span>.</span></div>
+        <p class="footer-desc">La plateforme qui connecte les meilleurs talents tech africains avec les entreprises du monde entier.</p>
+        <div class="footer-social" aria-label="Réseaux sociaux AfriTalent">
+          <a href="#" class="social-icon" aria-label="Twitter AfriTalent"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn AfriTalent"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram AfriTalent"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube AfriTalent"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Liens utiles -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-heading">Liens utiles</div>
+      
+      </div>
+
+      <!-- Colonne 3 : Ressources -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-heading">Ressources</div>
+        
+      </div>
+
+      <!-- Colonne 4 : Contact -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-heading">Contact</div>
+        
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="footer-copy">
+        @ <span class="current-year"></span> AfriTalent.
+        Copyright 2026.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
