@@ -1,0 +1,116 @@
+/*  RESET CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* Couleurs */
+  --color-primary: #0A2647;
+  --color-secondary: #2C74B3;
+  --color-accent: #F4A261;
+  --color-light: #F9F9F9;
+  --color-dark: #1B1B1B;
+
+  /* Fonts */
+  --font-title: "Roboto", sans-serif;
+  --font-text: 'Open Sans', sans-serif;
+
+
+  /* Espacement */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
+
+/*  Body  */
+body {
+  font-family: var(--font-text);
+  font-optical-sizing: auto;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+/*  TITRES  */
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  margin-bottom: var(--spacing-md);
+}
+
+/*  NAVBAR  */
+.navbar {
+  background-color: white;
+  box-shadow: 10px 5px 5px black;
+  padding: var(--spacing-md);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--color-primary) !important;
+}
+
+.nav-link {
+  color: var(--color-dark) !important;
+  margin: 0 var(--spacing-sm);
+  /* border-bottom: 2px solid rgb(230, 184, 0); */
+  
+}
+
+.nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+/*  BOUTON CUSTOM  */
+.btn-primary-custom {
+  background-color: rgb(230, 184, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: black;
+  color: #F9F9F9;
+}
+
+/*  HERO  */
+.hero {
+  padding-top: 100px;
+  padding-bottom: var(--spacing-lg);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.hero-subtitle {
+  margin-bottom: var(--spacing-md);
+}
+
+.navbar a {
+  text-decoration: none; 
+  color: #333;
+  padding-bottom: 5px;
+  position: relative;
+}
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(230, 184, 0);
+  transition: width 0.3s ease; 
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar a.active::after {
+  width: 100%;
+}
