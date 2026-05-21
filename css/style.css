@@ -10,7 +10,7 @@
   /* Couleurs */
   --color-primary: #0A2647;
   --color-secondary: #2C74B3;
-  --color-accent: #F4A261;
+  --color-accent: rgb(230, 184, 0);
   --color-light: #F9F9F9;
   --color-dark: #1B1B1B;
 
@@ -34,8 +34,11 @@ body {
   line-height: 1.6;
 }
 
-/*  TITRES  */
-h1, h2, h3, h4 {
+/*  TITRES typographies */
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-title);
   margin-bottom: var(--spacing-md);
 }
@@ -55,8 +58,6 @@ h1, h2, h3, h4 {
 .nav-link {
   color: var(--color-dark) !important;
   margin: 0 var(--spacing-sm);
-  /* border-bottom: 2px solid rgb(230, 184, 0); */
-  
 }
 
 .nav-link:hover {
@@ -73,31 +74,17 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary-custom:hover {
-  background-color: black;
-  color: #F9F9F9;
-}
-
-/*  HERO  */
-.hero {
-  padding-top: 100px;
-  padding-bottom: var(--spacing-lg);
-}
-
-.hero-title {
-  font-size: 2.5rem;
-  color: var(--color-primary);
-}
-
-.hero-subtitle {
-  margin-bottom: var(--spacing-md);
+  background-color: white;
+  color: black;
 }
 
 .navbar a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #333;
   padding-bottom: 5px;
   position: relative;
 }
+
 .navbar a::after {
   content: '';
   position: absolute;
@@ -106,11 +93,163 @@ h1, h2, h3, h4 {
   bottom: 0;
   left: 0;
   background-color: rgb(230, 184, 0);
-  transition: width 0.3s ease; 
+  transition: width 0.3s ease;
 }
+
 .navbar a:hover::after {
   width: 100%;
 }
+
 .navbar a.active::after {
   width: 100%;
 }
+
+/*  HERO  */
+.hero {
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 72px 3rem 4rem 4rem;
+  gap: 4rem;
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.hero-title .accent {
+  color: var(--color-secondary);
+}
+
+.hero-title .accent-green {
+  color: var(--color-accent);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.btn-hero {
+  background-color: var(--color-accent);
+  border-radius: 50px;
+  color: var(--color-light);
+}
+
+.btn-hero:hover {
+  background-color: black;
+  color: var(--color-light);
+}
+
+.btn-hero2 {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.btn-hero2:hover {
+  background-color: black;
+  color: var(--color-light);
+}
+
+#statistique h2 {
+  text-align: center;
+}
+
+.stats-card {
+  width: 52px;
+  height: 52px;
+  background-color: var(--color-light);
+}
+
+/* comment ça marche */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1.25rem;
+}
+
+.bento-card {
+  background-color: var(--color-accent);
+  border-radius: 24px;
+  border: 1px solid #F4A261;
+  padding: 2rem;
+  color: var(--color-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border: 1px solid #F4A261;
+}
+
+.bento-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+/* categories */
+.category-card{
+  background-color: var(--color-light);
+  border-radius: 24px;
+  /* border: 1px solid #F4A261; */
+  padding: 2rem;
+  color: black;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+.category-card:hover{
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+ border-bottom: 2px solid var(--color-accent);
+  color: black;
+  }
+.icon-category{
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: 50px;
+}
+/* temogniage */
+.temoignage-card{
+  background-color: var(--color-light);
+  border-radius: 24px;
+  border: 1px solid #F4A261;
+  padding: 2rem;
+  color: black;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 50%;
+  height: 400px;
+  
+}
+/* .img-carousel img{
+  height: 100px;
+  width: 100px;
+} */
+
+
+
