@@ -18,15 +18,18 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">AfriTalent</a>
+        <a class="navbar-brand" href="#">
+          <div class="img-logo"><img src="images/logo.png" alt=""></div>
+        </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
           aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navMenue"> -->
+
         <div class="collapse navbar-collapse" id="navMenu">
 
           <ul class="navbar-nav mx-auto gap-1">
@@ -57,13 +60,65 @@
       </div>
       </div>
     </nav>
-  </header>
+  </header> -->
+  <header>
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+
+      <a class="navbar-brand img-logo" href="index.html">
+        <img src="images/logo.png" alt="AfriTalent Logo">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="freelances.html">Freelances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tarifs.html">Tarifs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <a href="freelances.html" class="btn-primary-custom">
+            Rejoindre AfriTalent
+          </a>
+        </div>
+
+      </div>
+ </div>
+  </nav>
+</header>
 
   <main>
     <section class="hero">
       <div class="container py-4">
         <h1 class="hero-title" id="hero-title">Les meilleurs <br> <span class="accent">talents</span><br>
-      <span class="accent-green">tech</span>   
+          <span class="accent-green">tech</span>
         </h1>
         <p class="hero-subtitle">AfriTalent connecte les freelances tech africains les plus qualifiés
           avec des entreprises ambitieuses du monde entier. Rapide, fiable, humain.</p>
@@ -79,22 +134,22 @@
     <section id="statistique">
       <h2>AfriTalent en statistique</h2>
       <div class="row text-center mt-5 stats-container">
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <h3 class="counter" data-bs-target="2500">+2500</h3>
           <p>Freelances</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <h3 class="counter" data-bs-target="800">+800</h3>
           <p>entreprises</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <h3 class="counter" data-bs-target="12000">+12000</h3>
           <p> missions realisées</p>
         </div>
       </div>
     </section>
 
-              <!-- Comment ça marche -->
+    <!-- Comment ça marche -->
 
     <section class="py-5 bg-light">
       <div class="container">
@@ -141,7 +196,7 @@
       </div>
     </section>
 
-                      <!-- Category -->
+    <!-- Category -->
 
     <section class="categories py-5">
       <div class="container">
@@ -206,7 +261,7 @@
       </div>
     </section>
 
-                <!-- Temoignage -->
+    <!-- Temoignage -->
 
     <section class="témoignage py-5 bg-light">
       <div class="container">
@@ -218,10 +273,9 @@
 
             <div class="carousel-item active">
               <div class="temoignage-card mx-auto">
-              <!-- <div class="img-carousel">
-                <img src="images/imgA.jpg" class="avatar" alt="Fatou Ndiaye">
-                </div> -->
-                <!-- <img src="https://i.pravatar.cc/100?img=32" class="avatar" alt="Awa Diop"> -->
+                <div class="img-carousel">
+                  <img src="images/imgA.jpg" class="img" alt="Awa Diop">
+                </div>
                 <p class="temoignage-text">
                   "Grâce à AfriTalent j'ai trouvé 3 missions en 1 mois. La plateforme est super intuitive et les
                   paiements sont vraiment sécurisés. Je recommande !"
@@ -234,12 +288,14 @@
 
             <div class="carousel-item">
               <div class="temoignage-card mx-auto">
-                <img src="https://i.pravatar.cc/100?img=12" class="avatar" alt="Moussa Kane">
+                <div class="img-carousel">
+                  <img src="images/imgB.jpg" class="img" alt="Adja Sow">
+                </div>
                 <p class="temoignage-text">
                   "En tant que startup, on galérait à recruter. AfriTalent nous a mis en relation avec un dev senior en
                   24h. Qualité et rapidité au rendez-vous."
                 </p>
-                <h5 class="mb-0">Moussa Kane</h5>
+                <h5 class="mb-0">Adja Sow</h5>
                 <small class="text-muted">CEO, TechSahel</small>
               </div>
             </div>
@@ -248,7 +304,7 @@
             <div class="carousel-item">
               <div class="temoignage-card mx-auto">
                 <div class="img-carousel">
-                <img src="images/imgA.jpg" class="avatar" alt="Fatou Ndiaye">
+                  <img src="images/imgC.jpg" class="img" alt="Fatou Ndiaye">
                 </div>
                 <p class="temoignage-text">
                   "Le système d'escrow m'a rassurée pour ma première mission. J'ai été payée dès la livraison validée.
@@ -288,7 +344,7 @@
       </div>
     </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
     <footer>
       <div class="container">
