@@ -77,12 +77,53 @@ h4 {
   color: black;
   border: 1px solid rgb(230, 184, 0);
 }
+.theme-btn{
+  border: none;
+  background:transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #333;
+}
+body.dark {
+  background: #121212;
+  color: white;
+}
 
+body.dark .navbar {
+  background: #1e1e1e !important;
+}
+
+body.dark .nav-link {
+  color: white !important;
+}
 .navbar a {
   text-decoration: none;
   color: #333;
   padding-bottom: 5px;
   position: relative;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgb(230, 184, 0);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  /* display: none; */
+  cursor: pointer;
+  font-size: 18px;
+}
+.back-to-top.show {
+  display: block;
+}
+
+.navbar.scrolled {
+  background: white !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 5px 0;
 }
 
 .navbar a::after {
