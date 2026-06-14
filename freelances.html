@@ -12,7 +12,7 @@
 
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg bg-white">
+  <nav class="navbar navbar-expand-lg bg-white" id="navbar">
     <div class="container">
 
       <a class="navbar-brand img-logo" href="index.html">
@@ -67,286 +67,284 @@
   </nav>
 </header>
 
-  <main class="container my-5">
+<main class="container freelance my-5">
     <section class="fad-section">
-      <div class="container">
-    <h1>Catalogue de freelances</h1>
-    <p class="section-desc">
-      Découvrez <strong id="freelance-count">9 freelances</strong> experts, vérifiés et disponibles pour votre projet.
-    </p>
-    </div>
+        <div class="container freelance text-center">
+            <h1>
+                Catalogue de freelances
+            </h1>
+            <p class="section-desc">
+                Découvrez <strong id="freelance-count">9 freelances</strong> experts, vérifiés et disponibles pour votre projet.
+            </p>
+        </div>
     </section>
 
-   <section class="section-pad fad-section" style="padding-top:2rem;" aria-label="Filtrage et catalogue des freelances">
-  <div class="container">
+    <section class="section-pad fad-section" style="padding-top:2rem;" aria-label="Filtrage et catalogue des freelances">
+        <div class="container">
 
-    <!-- Barre de filtres -->
-    <div class="filter-bar" role="group" aria-label="Filtrer par catégorie">
-      <button class="filter-btn active" >Tous</button>
-      <button class="filter-btn" data-filter="dev" >Développement Web</button>
-      <button class="filter-btn" data-filter="design" >Design UI/UX</button>
-      <button class="filter-btn" data-filter="data" >Data & IA</button>
-      <button class="filter-btn" data-filter="marketing" >Marketing Digital</button>
-      <button class="filter-btn" data-filter="devops" >DevOps & Cloud</button>
-      <button class="filter-btn" data-filter="redaction" >Rédaction Tech</button>
-    </div>
-
- <div class="row g-4 mt-3" id="freelancesGrid">
-
-      <!-- Freelance 1 -->
-      <div class=" col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-             <img src="images/img.png" alt="">
-            </div>
-            <div class="freelance-name">Amy Diouf</div>
-            <div class="freelance-specialty">Développement Web</div>
-            <p class="freelance-bio">Developpeur HTML/CSS avec 1 ans d'expérience sur des projets e-commerce et SaaS en Afrique de l'Ouest.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JAVASCRIPT</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">25 000 F</div>
-              <div>
-              </div>
+            <!-- Barre de filtres -->
+            <div class="filter-bar" role="group" aria-label="Filtrer par catégorie">
+                <button class="filter-btn active" data-filter="all">
+                    Tous
+                </button>
+                <button class="filter-btn" data-filter="dev">
+                    Développement Web
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    Design UI/UX
+                </button>
+                <button class="filter-btn" data-filter="data">
+                    Data & IA
+                </button>
+                <button class="filter-btn" data-filter="marketing">
+                    Marketing Digital
+                </button>
+                <button class="filter-btn" data-filter="devops">
+                   DevOps & Cloud
+                </button>
+                <button class="filter-btn" data-filter="redaction">
+                    Rédaction Tech
+                </button>
             </div>
 
+            <div class="row g-4 mt-3" id="freelancesGrid">
+                <!-- Freelance 1 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/imgA.jpg" alt="Amy Diouf">
+                            </div>
+                            <div class="freelance-name">Amy Diouf</div>
+                            <div class="freelance-specialty">Développement Web</div>
+                            <p class="freelance-bio">Développeur HTML/CSS avec 1 an d'expérience sur des projets e-commerce et SaaS en Afrique de l'Ouest.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JAVASCRIPT</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">25 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Amy Diouf">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
 
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Amy Diouf">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-    
-<div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/img.png" alt="">
-            </div>
-            <div class="freelance-name">Khady Sokhna</div>
-            <div class="freelance-specialty">Développement Web</div>
-            <p class="freelance-bio">Full-stack React/Node.js avec 5 ans d'expérience sur des projets e-commerce et SaaS en Afrique de l'Ouest.</p>
-            <div class="skill-tags"></p>
-            <div class="skill-tags">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">PostgreSQL</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">35 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Khady Sokhna">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/img.png" alt="">
-            </div>
-            <div class="freelance-name">Fatou Thiam</div>
-            <div class="freelance-specialty">Data & IA</div>
-            <p class="freelance-bio">Data scientist spécialisé en ML pour la finance et l'agriculture. PhD en IA de l'Université Mohammed V de Rabat</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">TensorFlow</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">35 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Fatou Thiam">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/hom.png" alt="">
-            </div>
-            <div class="freelance-name">Latyr Faye</div>
-            <div class="freelance-specialty">DevOps & Cloud</div>
-            <p class="freelance-bio">Ingénieur DevOps certifié AWS et Kubernetes. Spécialisé en CI/CD, infrastructure as code et sécurité cloud.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Terraform</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">30 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Latyr Faye">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3 ">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-               <img src="images/hom.png" alt="">
-            </div>
-            <div class="freelance-name">Babacar Diouf</div>
-            <div class="freelance-specialty">Design UI/UX</div>
-            <p class="freelance-bio">Designer produit passionnée par l'expérience mobile en Afrique. Portfolio primé au Pan-African Design Award 2025.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Prototypage</span>
-              <span class="skill-tag">Research</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">20 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Babacar Diouf">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/hom.png" alt="">
-            </div>
-            <div class="freelance-name">Cheikh Diallo</div>
-            <div class="freelance-specialty">Marketing Digital</div>
-            <p class="freelance-bio">Expert en growth hacking et SEO pour startups africaines. A contribué à faire croître 3 licornes tech nigérianes.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">SEO</span>
-              <span class="skill-tag">Growth</span>
-              <span class="skill-tag">Analytics</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">18 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Cheikh Diallo">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/hom.png" alt="">
-            </div>
-            <div class="freelance-name">Moustapha Bop</div>
-            <div class="freelance-specialty">Rédaction Tech</div>
-            <p class="freelance-bio">Rédacteur technique trilingue (FR/AR/EN). Spécialisée en documentation API, whitepapers et articles de blog tech.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Documentation</span>
-              <span class="skill-tag">API Docs</span>
-              <span class="skill-tag">Blog</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">15 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Moustapha Bop">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/img.png" alt="">
-            </div>
-            <div class="freelance-name">Assaitou Ndiaye</div>
-            <div class="freelance-specialty">Data & IA</div>
-            <p class="freelance-bio">Ingénieur data spécialisé en pipeline ETL et visualisation. Expert Power BI et Tableau pour des dashboards décisionnels.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Power BI</span>
-              <span class="skill-tag">Spark</span>
-              <span class="skill-tag">dbt</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">28 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Aissatou Ndiaye">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
-      <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
-        <article class="freelance-card bg-light rounded-3">
-          <div class="freelance-card-body">
-            <div class="freelance-avatar" aria-hidden="true">
-              <img src="images/img.png" alt="">
-            </div>
-            <div class="freelance-name">Adja Sow</div>
-            <div class="freelance-specialty">Design UI/UX</div>
-            <p class="freelance-bio">Directrice artistique freelance. Créatrice d'identités de marque pour startups fintech et edtech panafricaines.</p>
-            <div class="skill-tags">
-              <span class="skill-tag">Branding</span>
-              <span class="skill-tag">Illustrator</span>
-              <span class="skill-tag">After Effects</span>
-            </div>
-            <div class="freelance-meta">
-              <div class="freelance-rate">24 000 F</div>
-              <div>
-              </div>
-            </div>
-            <a href="#" class="btn-primary-custom w-100 mt-3 justify-content-center"
-               aria-label="Adja Sow">
-              Voir le profil
-            </a>
-          </div>
-        </article>
-      </div>
-   
+                <!-- Freelance 2 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="dev">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/imgB.jpg" alt="Khady Sokhna">
+                            </div>
+                            <div class="freelance-name">Khady Sokhna</div>
+                            <div class="freelance-specialty">Développement Web</div>
+                            <p class="freelance-bio">Full-stack React/Node.js avec 5 ans d'expérience sur des projets e-commerce et SaaS.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">35 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Khady Sokhna">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
 
-    </div>
-    </div>
-</section>
+                <!-- Freelance 3 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="data">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/imgC.jpg" alt="Fatou Thiam">
+                            </div>
+                            <div class="freelance-name">Fatou Thiam</div>
+                            <div class="freelance-specialty">Data & IA</div>
+                            <p class="freelance-bio">Data scientist spécialisé en ML pour la finance et l'agriculture. PhD en IA.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">35 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Fatou Thiam">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
 
+                <!-- Freelance 4 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="devops">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/téléchargement (2).jpg" alt="Latyr Faye">
+                            </div>
+                            <div class="freelance-name">Latyr Faye</div>
+                            <div class="freelance-specialty">DevOps & Cloud</div>
+                            <p class="freelance-bio">Ingénieur DevOps certifié AWS et Kubernetes. Spécialisé en CI/CD et sécurité cloud.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Terraform</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">30 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Latyr Faye">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
 
-  </main>
+                <!-- Freelance 5 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="design">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/téléchargement.jpg" alt="Babacar Diouf">
+                            </div>
+                            <div class="freelance-name">Babacar Diouf</div>
+                            <div class="freelance-specialty">Design UI/UX</div>
+                            <p class="freelance-bio">Designer produit passionné par l'expérience mobile en Afrique. Portfolio primé.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Prototypage</span>
+                                <span class="skill-tag">Research</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">20 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Babacar Diouf">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Freelance 6 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="marketing">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/hom.png" alt="Cheikh Diallo">
+                            </div>
+                            <div class="freelance-name">Cheikh Diallo</div>
+                            <div class="freelance-specialty">Marketing Digital</div>
+                            <p class="freelance-bio">Expert en growth hacking et SEO pour startups africaines. A contribué à faire croître 3 licornes.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SEO</span>
+                                <span class="skill-tag">Growth</span>
+                                <span class="skill-tag">Analytics</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">18 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Cheikh Diallo">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Freelance 7 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="redaction">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/hmm.png" alt="Moustapha Bop">
+                            </div>
+                            <div class="freelance-name">Moustapha Bop</div>
+                            <div class="freelance-specialty">Rédaction Tech</div>
+                            <p class="freelance-bio">Rédacteur technique trilingue (FR/AR/EN). Spécialisé en documentation API et articles tech.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Documentation</span>
+                                <span class="skill-tag">API Docs</span>
+                                <span class="skill-tag">Blog</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">15 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Moustapha Bop">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Freelance 8 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="data">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/téléchargement (1).jpg" alt="Assaitou Ndiaye">
+                            </div>
+                            <div class="freelance-name">Assaitou Ndiaye</div>
+                            <div class="freelance-specialty">Data & IA</div>
+                            <p class="freelance-bio">Ingénieur data spécialisé en pipeline ETL et visualisation. Expert Power BI et Tableau.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Spark</span>
+                                <span class="skill-tag">dbt</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">28 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Assaitou Ndiaye">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Freelance 9 -->
+                <div class="col-lg-4 col-md-6 freelance-card-wrapper fade-in-up" data-category="design">
+                    <article class="freelance-card bg-light rounded-3">
+                        <div class="freelance-card-body">
+                            <div class="freelance-avatar" aria-hidden="true">
+                                <img src="images/imgA.jpg" alt="Adja Sow">
+                            </div>
+                            <div class="freelance-name">Adja Sow</div>
+                            <div class="freelance-specialty">Design UI/UX</div>
+                            <p class="freelance-bio">Directrice artistique freelance. Créatrice d'identités de marque pour startups fintech.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Branding</span>
+                                <span class="skill-tag">Illustrator</span>
+                                <span class="skill-tag">After Effects</span>
+                            </div>
+                            <div class="freelance-meta">
+                                <div class="freelance-rate">24 000 F</div>
+                            </div>
+                            <a href="#" class="btn-custom w-100 mt-3 justify-content-center"
+                               aria-label="Adja Sow">
+                                <i class="fas fa-user-circle"></i> Voir le profil
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
  <footer>
   <div class="container">

@@ -97,8 +97,116 @@ const regarder = new IntersectionObserver((elementsVisibles) => {
 });
 
 sections.forEach((section) => {
- regarder.regarder(section);
+ regarder.observe(section);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
 
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.freelance-card-wrapper');
 
+    function filter(category) {
+
+        cards.forEach(card => {
+
+            const cardCategory = card.dataset.category;
+
+            if (category === "all" || cardCategory === category) {
+                card.classList.remove("hide");
+            } else {
+                card.classList.add("hide");
+            }
+        });
+    }
+
+    buttons.forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const category = btn.dataset.filter;
+
+            filter(category);
+        });
+    });
+
+    // INIT
+    filter("all");
+});
+
+//Formulaires
+
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Validation en temps réel sur blur
+  form.querySelectorAll('[data-validate]').forEach(input => {
+    input.addEventListener('blur', () => validateField(input));
+    input.addEventListener('input', () => {
+      // Effacer erreur si l'utilisateur corrige
+      if (input.classList.contains('is-invalid')) validateField(input);
+    });
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Valider tous les champs
+    let valid = true;
+    form.querySelectorAll('[data-validate]').forEach(input => {
+      if (!validateField(input)) valid = false;
+    });
+
+    if (valid) {
+      // Succès — afficher message
+      form.style.display = 'none';
+      const success = document.getElementById('formSuccess');
+      if (success) {
+        success.classList.add('show');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  });
+
+  function validateField(input) {
+    const type = input.getAttribute('data-validate');
+    const value = input.value.trim();
+    const errorEl = document.getElementById(input.id + '-error');
+
+    let isValid = true;
+    let errorMsg = '';
+
+    switch (type) {
+      case 'required':
+        if (!value) { isValid = false; errorMsg = 'Ce champ est requis.'; }
+        break;
+      case 'email':
+        if (!value) { isValid = false; errorMsg = 'L\'email est requis.'; }
+        else if (!emailRegex.test(value)) { isValid = false; errorMsg = 'Format d\'email invalide.'; }
+        break;
+      case 'message':
+        if (!value) { isValid = false; errorMsg = 'Le message est requis.'; }
+        else if (value.length < 20) { isValid = false; errorMsg = `Minimum 20 caractères (${value.length}/20).`; }
+        break;
+      case 'select':
+        if (!value) { isValid = false; errorMsg = 'Veuillez choisir un sujet.'; }
+        break;
+    }
+
+    // Mise à jour visuelle
+    input.classList.toggle('is-valid', isValid && value.length > 0);
+    input.classList.toggle('is-invalid', !isValid);
+
+    if (errorEl) {
+      errorEl.textContent = errorMsg;
+      errorEl.classList.toggle('show', !isValid);
+    }
+
+    return isValid;
+  }
+}

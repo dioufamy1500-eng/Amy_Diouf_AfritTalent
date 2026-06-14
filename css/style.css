@@ -348,3 +348,140 @@ body.dark .nav-link {
 
 
 
+/* CONTAINER */
+.freelance {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 1rem;
+    background: #111;
+    border-radius: 50px;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: #222;
+}
+
+.filter-btn.active {
+    background: #ffd700;
+    color: #111;
+    font-weight: bold;
+}
+
+/* CARDS */
+.freelance-card-wrapper {
+    transition: all 0.3s ease;
+}
+
+.freelance-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.freelance-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* AVATAR */
+.freelance-avatar {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffd700;
+}
+
+.freelance-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXT */
+.freelance-name {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #111;
+}
+
+.freelance-specialty {
+    color: #111;
+    background: #fff7cc;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* BIO */
+.freelance-bio {
+    font-size: 13px;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* TAGS */
+.skill-tags span {
+    display: inline-block;
+    background: #fff7cc;
+    color: #111;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    margin: 3px;
+}
+
+/* PRICE */
+.freelance-rate {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #111;
+}
+
+/* BUTTON */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #111;
+    color: #ffd700;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #ffd700;
+    color: #111;
+}
+
+/* HIDE */
+.hide {
+    display: none !important;
+}
+
+
+
